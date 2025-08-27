@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       working-directory: ./transmission-daemon
-      TRANSMISSION_VERSION: 4.1.0-beta.2+rac5c9e082d
+      TRANSMISSION_VERSION: 4.1.0-beta.2
     defaults:
       run:
         working-directory: ${{ env.working-directory }}
