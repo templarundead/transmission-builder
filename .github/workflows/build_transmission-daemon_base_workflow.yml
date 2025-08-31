@@ -18,7 +18,7 @@ jobs:
         working-directory: ${{ env.working-directory }}
 
     steps:
-      - uses: actions/checkout@v4.1.6
+      - uses: actions/checkout@v5
 
       - name: Install buildah
         run: |
@@ -44,7 +44,7 @@ jobs:
           /bin/tar clJf transmission-daemon-${{ env.TRANSMISSION_VERSION }}-${{ inputs.arch }}.tar.xz out/*
 
       - name: Upload the transmission-daemon tarball
-        uses: actions/upload-artifact@v4.3.3
+        uses: actions/upload-artifact@v4.6.2
         with:
           name: transmission-daemon-${{ env.TRANSMISSION_VERSION }}-${{ inputs.arch }}.tar.xz
           path: ${{ env.working-directory }}/transmission-daemon-${{ env.TRANSMISSION_VERSION }}-${{ inputs.arch }}.tar.xz
