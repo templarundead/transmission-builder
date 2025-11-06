@@ -10,7 +10,7 @@ RUN apk update && apk --no-cache add sudo vim \
     openssl-libs-static libpsl-static libevent-static libidn2-static libidn2-dev libevent-dev xz \
     zstd-static ninja cmake gettext-dev wget
 
-RUN wget -c https://github.com/transmission/transmission/releases/download/4.1.0-beta.2/transmission-${TRANSMISSION_VERSION}.tar.xz
+RUN wget -c https://github.com/transmission/transmission/releases/download/4.1.0-beta.3/transmission-${TRANSMISSION_VERSION}.tar.xz
 RUN tar -xf transmission-${TRANSMISSION_VERSION}.tar.xz
 
 COPY static-transmission-daemon.patch /static-transmission-daemon.patch
