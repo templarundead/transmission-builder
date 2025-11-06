@@ -21,7 +21,7 @@ jobs:
       matrix:
         arch: [amd64, arm64]
     env:
-      TRANSMISSION_VERSION: 4.1.0-beta.2+rac5c9e082d
+      TRANSMISSION_VERSION: 4.1.0-beta.3+rf20fd5e373
     steps:
       # Checkout the repository, this is needed for 'gh' to work
       - uses: actions/checkout@v4.1.6
